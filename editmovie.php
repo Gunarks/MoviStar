@@ -56,7 +56,7 @@ if (!empty($userData)) {
                 <p class="page-description">Altere os dados do filme no formulário abaixo:</p>
                 <form id="edit-movie-form" action="<?= $BASE_URL ?>movie_process.php" method="POST" enctype="multipart/form">
                     <input type="hidden" name="type" value="update">
-                    <input type="hidden" name="type" value="<?= $movie->id ?>">
+                    <input type="hidden" name="id" value="<?= $movie->id ?>">
                     <div class="form-group">
                         <label for="title">Título:</label>
                         <input type="text" class="form-control my-2" id="title" name="title" value="<?= $movie->title ?>">
@@ -64,7 +64,7 @@ if (!empty($userData)) {
 
                     <div class="form-group">
                         <label for="image">Imagem:</label>
-                        <input type="file" class="form-control my-2" id="image" name="image">
+                        <input type="file" class="form-control-file my-2" name="image">
                     </div>
 
                     <div class="form-group">

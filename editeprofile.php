@@ -44,12 +44,12 @@
                     <div class="col-md-4">
                         <div id="profile-image-container" style="background-image: url('<?= $BASE_URL ?>img/users/<?php echo $userData->image ?>')"></div>
                         <div class="form-group">
-                            <label for="lastname">Foto de Perfil:</label>
+                            <label for="image">Foto de Perfil:</label>
                             <input type="file" class="form-control-file my-2" name="image">
                         </div>
 
                         <div class="form-group">
-                            <label for="lastname">Sobre Você:</label>
+                            <label for="bio">Sobre Você:</label>
                             <textarea class="form-control my-2" name="bio" id="io" rows="6" placeholder="Fale um pouco sobre você..."><?php echo $userData->bio ?></textarea>
                         </div>
                     </div>

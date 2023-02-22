@@ -234,6 +234,42 @@
     width: auto;
 }
 
+/* Profile */
+.profile-container {
+    justify-content: center;
+}
+
+.profile-description {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.about-title {
+    color: #CCC;
+}
+
+.added-movies-container, .about-container {
+    padding-top: 20px;
+}
+
+.about-container {
+    text-align: center;
+    background-color: #444;
+    border-bottom: 3px solid #ccc;
+}
+
+.added-movies-container {
+    background-color: #444;
+}
+
+.added-movies-container .movies-container {
+    padding: 20px;
+}
+
+.added-movies-container .movie-card {
+    width: 31%;
+}
+
 /* New movie */
 
 .new-movie-container {

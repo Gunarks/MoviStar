@@ -90,10 +90,11 @@ class MovieDAO implements MovieDAOInterface
 
     public function getMoviesByUserId($id)
     {
+
         $movies = [];
 
-        $stmt = $this->conn->prepare("SELECT * FROM movies 
-                                      WHERE users_id = :users_id");
+        $stmt = $this->conn->prepare("SELECT * FROM movies
+                                    WHERE users_id = :users_id");
 
         $stmt->bindParam(":users_id", $id);
 
